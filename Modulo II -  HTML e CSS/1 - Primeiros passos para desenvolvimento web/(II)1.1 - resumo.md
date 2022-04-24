@@ -33,8 +33,8 @@ Modelo de camadas
         80: HTTP (requisição simples na internet)
         443: HTTPS (requisição segura)
     
-    -Quais portas usadas pelo Gmail?
-    -Quais portas usadas pelo banco de dados MySQL, e pelo servidor web Apache?
+    -Quais portas usadas pelo Gmail? portas: 25, 465 ou 587.
+    -Quais portas usadas pelo banco de dados MySQL, e pelo servidor web Apache? Porta 3306. Porta 443.
 
 Roteadores, Switches e modems
 
