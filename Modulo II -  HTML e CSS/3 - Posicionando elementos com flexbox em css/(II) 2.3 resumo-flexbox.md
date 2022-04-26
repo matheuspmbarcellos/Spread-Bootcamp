@@ -58,3 +58,31 @@ Torna a tag um elemento do tipo flex container, e assim automaticamente todos os
         - **space-between**: cria um espaço igual entre os elementos.
         - **space-around**: os epaçamentos do meio são duas vezes maiores que o inicial e final.
         
+* ## Flex-grow
+    - Define a proporcionalidade de crescimentos dos itens, respeitando o tamanho de seus conteúdos internos.
+    - Não irá funcionar caso tenhamos adicionado justify-content ao nosso flex container.
+
+* ## Flex-basis
+    - É a propriedade que estabelece o tamanho inicial do item antes da distribuição de espaço restante dentro dele, usando como base o conteúdo interno disposto.
+    - Valores possíveis:
+        - auto: caso o item não tenha tamanho, este será proporcional ao conteúdo do item.
+        - px, %, em, ...: são valores exatos previamente definidos.
+        - 0 (zero): terá relação com a definição do flex-grow.
+
+* ## Flex-shrink
+    - É a propriedade que estabelece a capacidade de redução ou compressão do tamanho de um item.
+
+* ## Flex
+    - Esta propriedade é um **atalho** ou abreviação de escrita para as propriedades: *grow, shrink e basis*.
+
+* ## Order
+    - Essa propriedade vi lidar diretamente com a ordenação dos itens.
+
+* ## Align-self
+    - É a propriedade que estabelece o alinhamento de modo individual sobre um determinado item.
+        - auto: valor padrão, irá respeitar a definição de align-items do container.
+        - flex-start: ao início do container.
+        - flex-end: ao final do container.
+        - center: relativo ao centro de acordo com o eixo.
+        - stretch: ocupa todo o espaço do eixo.
+        - baseline: utiliza a linha base da tipografia.
