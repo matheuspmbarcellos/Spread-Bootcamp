@@ -6,21 +6,21 @@
 
 body {
     display: flex;
+    background-color: aqua;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: rgb(177, 225, 255);
 }
 
 button {
-    height: 40px;
-    width: 40px;
     border-radius: 50%;
     border: 2px solid lightcoral;
-    background-color: rgb(241, 214, 214);
-    color: lightcoral;
+    background-color: lightpink;
+    width: 40px;
+    height: 40px;
     font-size: 16pt;
-    font-weight: 600;
+    color: lightcoral;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -29,8 +29,9 @@ button {
 }
 
 #currentNumber {
+    margin: 0 20px;
     display: flex;
     align-items: center;
-    margin: 0 20px;
     font-size: 16pt;
 }
+    
