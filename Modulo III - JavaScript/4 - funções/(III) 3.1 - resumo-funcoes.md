@@ -116,7 +116,7 @@
     //retornará cada argumento com sua respectiva posição.
 
 ## Arrays
-### Spread
+### -> Spread
 #### Uma forma de lidar separadamente com elementos.
     function sum(x,y,z) {
         return x + y + z;
@@ -128,7 +128,7 @@
 
 * O que era parte de um array se torna um elemento independente.
 
-### Rest
+### -> Rest
 #### Combina os argumentos em um array
     function confereTamanho(...args) {
         console.log(arg.length)
@@ -141,7 +141,7 @@
 * O que era um elemento independente se torna parte de um array
 
 ## Objetos
-### Object Destructuring
+### -> Object Destructuring
     const user = {
         id: 42,
         displayName: 'jdoe',
@@ -163,8 +163,27 @@
     getFullName(user) // John doe
 * Entre chaves {}, podemos filtrar apenas os dados que nos interessam em um objeto.
 
+## If / else
+    function numeroPositivo(num) {
+        let resultado;
 
+        if(num < 0) {    //CONDIÇÃO
+            resultado = false;   //DECLARAÇÃO 1
+        } else {
+            resultado = true;  //DECLARAÇÃO 2
+        }
+        
+        return resultado;
+    }
 
+    numeroPositivo(2)
+    // true
+
+    numeroPositivo(-9)
+    //false
+
+    - Declaração 1(dentro de if): Caso a condição seja verdadeira.
+    - Declaração 2(dentro de else): Caso a condição seja falsa.
 
 
 
