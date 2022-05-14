@@ -1,4 +1,4 @@
-// If/else
+// If/else - exemplo 1
 
     // 1° forma
     function numeroPositivo1(num) {
@@ -50,3 +50,35 @@
 
     console.log(numeroPositivo3(19))
     console.log(numeroPositivo3(-83))
+
+// If/else - exemplo 2
+    function numeroPositivo4(num) {
+        const ehNegativo = num < 0
+        const maiorQuedez = num > 10
+
+        if(ehNegativo) {
+            return "Esse número é negativo!"
+        } else if(!ehNegativo && maiorQuedez) {
+            return "Esse número é positivo e maior que dez!"
+        }
+
+        return "Esse número é positivo!"
+    }
+
+    console.log(numeroPositivo4(-2))
+
+// Switch/case
+    function getAnimal(id) {
+        switch(id) {
+            case 1:
+                return "cão"
+            case 2:
+                return "gato"
+            case 3:
+                return "pássaro"
+            default:
+                return "id inválida"
+        }
+    }
+
+    console.log(getAnimal(1))
