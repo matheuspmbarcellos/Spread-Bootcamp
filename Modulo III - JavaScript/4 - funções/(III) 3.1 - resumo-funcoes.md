@@ -184,11 +184,122 @@
 
     - Declaração 1(dentro de if): Caso a condição seja verdadeira.
     - Declaração 2(dentro de else): Caso a condição seja falsa.
+---
+    function numeroPositivo4(num) {
+        const ehNegativo = num < 0
+        const maiorQuedez = num > 10
 
+        if(ehNegativo) {
+            return "Esse número é negativo!"
+        } else if(!ehNegativo && maiorQuedez) {
+            return "Esse número é positivo e maior que dez!"
+        }
 
+        return "Esse número é positivo!"
+    }
+* Javascript **não tem elsif**, as palavras sempre estão espaçadas.
 
+## Switch/case
+    function getAnimal(id) {
+        switch(id) {
+            case 1:
+                return "cão";
+            case 2:
+                return "gato;
+            case 3:
+                return "pássaro";
+            default;
+                return "id inválida"
+        }
+    }
+* Equivale a uma comparação de tipo e valor (===).
+* Sempre precisa de um valor "default".
+* Ideal para quando se precisa comparar muitos valores.
 
+## For
+#### Loop dentro de elementos iteráveis(arrays, string).
+    function multiplicaPorDois(arr) {
+        let multiplicados = []
 
+        for(let i = 0; i < arr.length; i++) {
+            multiplicados.push(arr[i]*2)
+        }
+
+        return multiplicados
+    }
+
+    const meusNumeros = [2, 33, 456, 356, 40]
+
+    multiplicaPorDois(meusNumeros);
+    // [4, 66, 912, 712, 80]
+## For...in
+#### Loop entre propriedades enumeráveis de um objeto.
+    function forInExemplo1(obj) {
+        for(prop in obj) {
+            console.log(prop)
+        }
+    }
+
+    const meuObjeto = {
+        nome: "João",
+        idade: "20",
+        cidade: "Salvador"
+    }
+
+    forInExemplo1(meuObjeto);
+    //nome
+    //idade
+    //cidade
+---
+    function forInExemplo2(obj) {
+        for(prop in obj) {
+            console.log(obj[prop])
+        }
+    }
+
+    const meuObjeto = {
+        nome: "João",
+        idade: "20",
+        cidade: "Salvador"
+    }
+
+    forInExemplo2(meuObjeto);
+    //João
+    //20
+    //Salvador
+
+## For...of
+#### Loop entre estruturas iteráveis(arrays, string).
+    function logLetras(palavra) {
+        for(letra of palavra) {
+            console.log(letra)
+        }
+    }
+
+    const palavra ="abacaxi"
+
+    logLetras(palavra);
+    // a
+    // b
+    // a
+    // c
+    // a
+    // x
+    // i
+---
+    function logNumeros(nums) {
+        for(num of nums) {
+            console.log(num)
+        }
+    }
+
+    const nums = [30, 20, 233, 2]
+
+    logNumeros(nums)
+    // 30
+    // 20
+    // 233
+    // 2
 
 
 
