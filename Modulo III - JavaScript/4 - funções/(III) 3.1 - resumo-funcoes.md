@@ -409,3 +409,42 @@ Evento | Elemento que recebeu o evento
 
     bruno()
     // Bruno
+
+## Arrow Functions
+    - PADRÃO
+
+    const helloWorld = function() {
+        return "Hello World";
+    }
+
+    - ARROW FUNCTION
+
+    const helloWorld = () => { return "Hello World";
+    }
+
+    ou
+
+    const helloWorld = () => "Hello World";
+
+    ou
+
+    const soma = (a, b) => a + b;
+
+    soma(4, 6)
+    // 10
+
+    ou
+
+    const soma = a => a;
+
+    soma(4)
+    // 4
+
+* Caso exista apenas uma linha, pode dispensar as chaves e o return.
+* Caso exista apenas um parâmetro, pode dispensar os parênteses.
+* Arrow function NÃO faz hoisting.
+
+### Algumas Restrições
+* "this" sempre será o objeto global. Métodos para modificar seu valor não irão funcionar.
+* Não existe o objeto "arguments".
+* O construtor (ex: new MeuObjeto()) também não pode ser utilizado.
