@@ -32,8 +32,8 @@ const meuObjeto = {
     cidade: "Salvador"
 }
 
-console.log(forInExemplo1(meuObjeto))
-console.log(forInExemplo2(meuObjeto))
+forInExemplo1(meuObjeto)
+forInExemplo2(meuObjeto)
 
 // For...of
 function logLetras(palavra) {
@@ -55,3 +55,29 @@ function logNumeros(nums) {
 
 const nums = [30, 20, 233, 2]
 logNumeros(nums)
+
+// While
+
+function exemploWhile() {
+    let num = 0
+
+    while(num <= 5) {
+        console.log(num)
+        num++
+    }
+}
+
+exemploWhile()
+
+// Do...while
+
+function exemploWhile2() {
+    let num = 6
+
+    do {
+        console.log(num)
+        num++
+    } while(num <= 5)
+}
+
+exemploWhile2()
