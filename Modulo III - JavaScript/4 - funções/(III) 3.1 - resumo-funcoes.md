@@ -301,7 +301,111 @@
     // 233
     // 2
 
+## While
+#### Executa instruções até que a condição se torne falsa.
+    function exemploWhile() {
+        let num = 0
+
+        while(num <= 5) {
+            console.log(num);
+            num++;
+        }
+    }
+
+    exemploWhile()
+    // 0
+    // 1
+    // 2
+    // 3
+    // 4
+    // 5
+
+## Do...while
+#### Executa instruções até que se tornem falsa. Porém, a primeira execução sempre ocorre.
+    function exemploWhile2() {
+        let num = 6
+
+        do {
+            console.log(num);
+            num++;
+        } while(num <= 5) 
+    }
+
+    exemploWhile2()
+    // 6
+
+## This
+#### A palavra **this** é uma referência de contexto. No exemplo, this refere-se ao objeto pessoa
+    const pessoa = {
+        firstName: "André",
+        lastName : "Soares",
+        id       : 1,
+        fullName : function() {
+            return this.firstName + " " + this.lastName;
+        },
+        getId: function() {
+            return this.id;
+        }
+    };
+
+    pessoa.fullName()
+    // "André Soares"
+
+    pessoa.getid()
+    // 1
+
+* Seu valor pode mudar de acordo com o lugar no código onde foi chamada:
 
 
+Contexto            | Referencia
+:-----------------: | :------------:
+Em um objeto(método) | Próprio objeto dono do método
+Sozinha  | Objeto global(em navegadores *window*)
+Função | Objeto global
+Evento | Elemento que recebeu o evento
 
+* ### Call
+     Utilizado para determinar a qual objeto o this deve se referir.
+#### Exemplo:
+    const pessoa2 = {
+        nome: 'Miguel',
+    };
 
+    const animal = {
+        nome: 'Murphy',
+    };
+
+    function getSomethings() {
+        console.log(this.name);
+    }
+
+    getSomethings.call(animal);
+    // Murphy
+
+#### É possível passar parâmetros para essa função separando-os por vírgulas:
+    const myObj = {
+        num1 = 2,
+        num2 = 4,
+    }
+
+    function soma(a, b) {
+        console.log(this.num1 + this.num2 + a + b)
+    }
+
+    soma.call(myObj, 1, 5);
+    // 12
+
+    soma.apply(myObj, [1, 5])
+    // 12
+* Com o *apply*, é possível passar parâmetros para essa função dentro de um array.
+
+### Bind
+#### Clona a estutura da função onde é chamada e aplica o valor do objeto passado como parâmetro.
+    const retornaNomes = function() {
+        return this.nome;
+    }
+
+    let bruno = retornaNomes.bind({ nome: 'Bruno' })
+
+    bruno()
+    // Bruno
