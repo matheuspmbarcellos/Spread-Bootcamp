@@ -24,4 +24,4 @@
 * Valor de retorno.
 * Considere se o array auxiliar será necessário.
 
-## Filter
+
