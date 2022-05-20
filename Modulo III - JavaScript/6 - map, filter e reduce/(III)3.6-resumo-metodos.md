@@ -1,5 +1,7 @@
 # Metodos (Map, Filter e Reduce)
 
+[Mozilla.org - Métodos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+
 ## Map
 * Cria um novo array.
 * Não modifica o array original.
