@@ -1,3 +1,5 @@
+/* CRIANDO TABELAS E INSERINDO DADOS */
+
 CREATE TABLE pessoas (
     id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
     nome VARCHAR(30) NOT NULL,
@@ -5,3 +7,6 @@ CREATE TABLE pessoas (
 )
 
 INSERT INTO pessoas ( nome, nascimento ) VALUES('Matheus', '1996-06-21');
+
+/* SELECIONANDO E ATUALIZANDO DADOS */
+
