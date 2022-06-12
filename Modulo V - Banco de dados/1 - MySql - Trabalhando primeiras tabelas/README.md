@@ -62,3 +62,9 @@ Ele atua como um servidor web livre, fácil de usar e capaz de interpretar pági
     sudo /opt/lampp/manager-linux.run    
 ##### ou, em sistemas de 64 bits:
      sudo /opt/lampp/manager-linux-x64.run
+
+##### 4. Para verificar se o servidor web está sendo executado, digite o seguinte endereço em um navegador:
+    http://localhost
+
+#### Para parar todos os serviços do xampp, use o seguinte comando no terminal.
+    sudo /opt/lampp/xampp stop
