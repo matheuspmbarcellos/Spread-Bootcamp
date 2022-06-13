@@ -40,3 +40,4 @@ ALTER TABLE pessoas ADD genero VARCHAR(1) NOT NULL AFTER nascimento;
 /* Agrupando dados */
 
 SELECT COUNT(id), genero FROM pessoas GROUP BY genero /* mostra a quantidade de cada genero na tabela */
+
